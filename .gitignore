@@ -1,0 +1,5 @@
+.idea
+http_server/node_modules/
+http_server/config/
+tiket_server/node_modules/
+package-lock.json

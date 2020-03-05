@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
     "start-http": "nodemon app.js",
-    "dev": "concurrently \"npm run start-http\""
+    "start-client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run start-http\" \"npm run start-client\""
   },
   "keywords": [
     "node",

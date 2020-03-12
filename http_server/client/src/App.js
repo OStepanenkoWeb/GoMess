@@ -1,17 +1,15 @@
-import React, {Component} from 'react'
-import {Route, Switch, Redirect} from 'react-router-dom'
+import React from 'react'
+import {Route, Switch, BrowserRouter as Router} from 'react-router-dom'
 import Layout from './hoc/Layout/Layout'
 import ChatList from './containers/ChatList/ChatList'
 
-export default class App extends Component {
-    render() {
+function App() {
         return (
-            <Layout>
+            <Router>
                 <Switch>
-                    <Route path={"/"} component={ChatList}/>
-                    <Redirect to="/"/>
+                    <Route path="/" component={ChatList}/>
                 </Switch>
-            </Layout>
+            </Router>
         )
-    }
 }
+export default App
